@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+}
+
+.topNavbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #f0f0f0;
+}
+
+.navbarEmailPhone {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.navbarEmailPhone img {
+    width: 20px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px;
+    position: relative;
+}
+
+.navbarOption {
+    position: relative;
+    gap: 30px;
+    display: flex;
+}
+
+.navbar button {
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0px;
+    background-image: linear-gradient(to right, #f19805, #ffffff, #04b106);
+    transition: 200ms;
+    color: #2196f3;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.navbar button:hover {
+    filter: brightness(0.8);
+}
+
+.bannerArea {
+    background-color: #fff;
+    object-fit: cover;
+}
+
+.bannerArea img {
+    object-fit: cover;
+    width: 100vw;
+}
+
+.aboutAcademy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.aboutContent {
+    width: 60vw;
+    padding-left: 20px;
+}
+
+.aboutContent h1 {
+    font-family: 'Bevan', cursive;
+    font-size: 34px;
+}
+
+.aboutContent p {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.aboutImage {}
+
+.objective {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.objective h1 {
+    font-family: 'Bevan', cursive;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.armyObjective {
+    margin: 20px;
+}
+
+.armyObjective img {
+    width: 90vw;
+    filter: brightness(0.8);
+}
+
+.armyObjective h1 {
+    margin-top: -71px;
+    padding: 20px;
+    font-size: 28px;
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    z-index: 2;
+    position: relative;
+}
+
+.policeObjective {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.policeObjective span h1 {
+    margin-top: -71px;
+    padding: 20px;
+    font-size: 28px;
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    z-index: 2;
+    position: relative;
+}
+
+.policeObjective img {
+    width: 45vw;
+    filter: brightness(0.8);
+}
+
+
+@media screen and (max-width: 1000px) {
+    .aboutAcademy {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .aboutContent {
+        width: 90vw;
+    }
+
+    .navbarOption {
+        display: none;
+    }
+
+    .armyObjective {
+        margin: 10px;
+    }
+
+    .policeObjective {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .topNavbar {
+        flex-direction: column;
+    }
+
+    .aboutImage img {
+        height: 60vh;
+    }
+}
