@@ -236,10 +236,10 @@ a {
     margin-left: 50px;
 }
 
-@media screen and (max-height: 750px) {
+@media screen and (max-width: 750px) {
     .OPEN {
         display: block;
-        padding: 20px;
+        padding: 10px;
     }
 
     .sidenav {
