@@ -20,6 +20,28 @@
 </head>
 
 <body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Achievements</a>
+        <a href="#">Location</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="OPEN">&#9776;</span>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+
+
+
     <header>
         <div class="topNavbar">
             <span class="navbarEmailPhone">
@@ -64,13 +86,17 @@
             <div class="aboutContent">
                 <h1>BEST DEFENCE ACADEMY IN BUHANA</h1>
                 <br>
-                <p>Commando Defence Academy is a top-notch training institution located in Buhana, Jhunjhunu, known for
-                    its expertise in training young individuals for the Army. The academy prides itself on its ability
+                <p>Commando Defence Academy is a top-notch training institution located in Buhana, Jhunjhunu, known
+                    for
+                    its expertise in training young individuals for the Army. The academy prides itself on its
+                    ability
                     to provide comprehensive and rigorous training programs that equip students with the necessary
                     skills and knowledge to excel in their military careers.
                     <br><br>
-                    Commando Defence Academy is a top-notch training institution located in Buhana, Jhunjhunu, known for
-                    its expertise in training young individuals for the Army. The academy prides itself on its ability
+                    Commando Defence Academy is a top-notch training institution located in Buhana, Jhunjhunu, known
+                    for
+                    its expertise in training young individuals for the Army. The academy prides itself on its
+                    ability
                     to provide comprehensive and rigorous training programs that equip students with the necessary
                     skills and knowledge to excel in their military careers.
                 </p>
