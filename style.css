@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: inter, Helvetica, sans-serif;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     padding: 15px;
-    background-color: #f0f0f0;
+    background-color: #d3d3d3;
 }
 
 .navbarEmailPhone {
@@ -46,19 +46,19 @@ a {
 
 .navbarOption {
     position: relative;
-    gap: 30px;
+    gap: 100px;
     display: flex;
 }
 
 .navbar button {
     cursor: pointer;
     width: 150px;
-    height: 40px;
+    height: 50px;
     border-radius: 5px;
     border: 0px;
-    background-image: linear-gradient(to right, #f19805, #ffffff, #04b106);
+    background-color:#d9d9d9;
     transition: 200ms;
-    color: #2196f3;
+    color: #000;
     font-size: 1rem;
     font-weight: 600;
 }
@@ -75,14 +75,18 @@ a {
 .bannerArea img {
     object-fit: cover;
     width: 100vw;
+    height: 85vh;
+    object-position:top;
 }
 
 .aboutAcademy {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
     margin-top: 40px;
+    gap:50px;
+    place-content:center;
 }
 
 .aboutContent {
@@ -91,8 +95,9 @@ a {
 }
 
 .aboutContent h1 {
-    font-family: 'Bevan', cursive;
+    font-family: 'Bevan';
     font-size: 34px;
+    font-weight:400;
 }
 
 .aboutContent p {
