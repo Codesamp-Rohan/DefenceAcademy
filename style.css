@@ -92,8 +92,9 @@ a {
 .bannerArea img {
     object-fit: cover;
     width: 100vw;
-    height: 33vh;
+    height: 800px;
     object-position:top;
+    filter: brightness(0.5);
 }
 
 .aboutAcademy {
@@ -107,7 +108,7 @@ a {
 }
 
 .aboutContent {
-    width: 60vw;
+    width: 44vw;
     padding-left: 20px;
 }
 
@@ -350,4 +351,25 @@ grid-wrapper>img {
 
 .navbarEmailPhone > img {
     filter: invert(1);
+}
+
+.imageText{
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+
+.imageText > span {
+    font-size: 40px;
+}
+
+.imageText > h1{
+    font-size: 50px;
+    color: #f9be4d;
 }
