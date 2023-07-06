@@ -1,103 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- <link rel="tab icon" href=""> -->
-      <title>Defence Academy</title>
-      <link rel="stylesheet" href="style.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link
-         href="https://fonts.googleapis.com/css2?family=Bevan&family=Grandiflora+One&family=Quicksand:wght@300&family=Rock+3D&display=swap"
-         rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Grandiflora+One&family=Inter&family=Quicksand:wght@300&family=Rock+3D&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-   </head>
-   <body>
-      <div id="mySidenav" class="sidenav">
-         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-         <a href="#">Home</a>
-         <a href="#">Achievements</a>
-         <a href="#">Location</a>
-         <a href="#">Contact Us</a>
-      </div>
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="OPEN">&#9776;</span>
-      <script>
-         function openNav() {
-             document.getElementById("mySidenav").style.width = "250px";
-         }
-         
-         function closeNav() {
-             document.getElementById("mySidenav").style.width = "0";
-         }
-      </script>
-      <header style="
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="tab icon" href=""> -->
+    <title>Defence Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Grandiflora+One&family=Quicksand:wght@300&family=Rock+3D&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Grandiflora+One&family=Inter&family=Quicksand:wght@300&family=Rock+3D&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Home</a>
+      <a href="#">Achievements</a>
+      <a href="#">Location</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="OPEN">&#9776;</span>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+    <header style="
          ">
-         <div class="topNavbar">
-            <span class="navbarEmailPhone">
-               <img src="images/gmail.png">
-               <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">
-                  <p>defenceacademy@gmail.com</p>
-               </a>
-            </span>
-            <span class="navbarEmailPhone">
-            <span class="navbarOption" style="
+      <div class="topNavbar">
+        <span class="navbarEmailPhone">
+          <img src="images/gmail.png">
+          <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">
+            <p>cdaacademybuhana@gmail.com</p>
+          </a>
+        </span>
+        <span class="navbarEmailPhone">
+          <span class="navbarOption" style="
                color: white;
                ">
             <a href="#" style="">HOME</a>
-            <a href="#" style="">ACHIVEMENTS</a><img src="images/logo.png" width="80">
+            <a href="#" style="">ACHIVEMENTS</a>
+            <img src="images/logo.png" width="80">
             <a href="#" style="place-self: center;">LOCATION</a>
             <a href="#">CONTACT US</a>
-            </span>
-            </span>
-            <span class="navbarEmailPhone">
-               <img src="images/telephone.png">
-               <a href="#">
-                  <p>6375150261</p>
-               </a>
-            </span>
-         </div>
-      </header>
-      <main>
-         <div class="bannerArea">
-            <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
-               <div class="carousel-cell">
-                <img src="images/group/full-team-picture-5.jpeg" alt="" />
-                <div class="imageText">
-                    <span>WELCOME TO</span>
-                    <h1>COMMANDO TRAINING ACADEMY</h1>
-                    <p>We Belive There Is Nothing More Important Than Education.</p>
-
-                </div>
+          </span>
+        </span>
+        <span class="navbarEmailPhone">
+          <img src="images/telephone.png">
+          <a href="#">
+            <p>6375150261</p>
+          </a>
+        </span>
+      </div>
+    </header>
+    <main>
+      <div class="bannerArea">
+        <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+          <div class="carousel-cell">
+            <img src="images/group/full-team-picture-5.jpeg" alt="" />
+            <div class="imageText">
+              <span>WELCOME TO</span>
+              <h1>COMMANDO TRAINING ACADEMY</h1>
+              <p>We Belive There Is Nothing More Important Than Education.</p>
             </div>
-               <div class="carousel-cell">
-                <img src="images/group/training-3.jpeg" alt="" />
-                <div class="imageText">
-                    <span>WELCOME TO</span>
-                    <h1>COMMANDO TRAINING ACADEMY</h1>
-                    <p>We Belive There Is Nothing More Important Than Education.</p>
-
-                </div>
-            </div>            
-               <div class="carousel-cell">
-                <img src="images/banner-sradhanjali-2-1.png" alt="" />
-                <div class="imageText">
-                    <span>WELCOME TO</span>
-                    <h1>COMMANDO TRAINING ACADEMY</h1>
-                    <p>We Belive There Is Nothing More Important Than Education.</p>
-
-                </div>
-            </div>            
-
+          </div>
+          <div class="carousel-cell">
+            <img src="images/group/training-3.jpeg" alt="" />
+            <div class="imageText">
+              <span>WELCOME TO</span>
+              <h1>COMMANDO TRAINING ACADEMY</h1>
+              <p>We Belive There Is Nothing More Important Than Education.</p>
             </div>
-         </div>
-         <div class="aboutAcademy">
-            <div class="aboutContent">
-               <h1>BEST DEFENCE ACADEMY IN BUHANA</h1>
+          </div>
+          <div class="carousel-cell">
+            <img src="images/banner-sradhanjali-2-1.png" alt="" />
+            <div class="imageText">
+              <span>WELCOME TO</span>
+              <h1>COMMANDO TRAINING ACADEMY</h1>
+              <p>We Belive There Is Nothing More Important Than Education.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="aboutAcademy">
+        <div class="aboutContent">
+          <ul class="course-list" style="list-style: none;">
+            <li>
+              <a href="#">
+                <div class="rtin-item">
+                  <div class="rtin-img">
+                    <img src="images/course/army.png" class="attachment-full size-full">
+                  </div>
+                  <div class="rtin-overlay">
+                    <div class="rtin-title">Army </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="rtin-item">
+                  <div class="rtin-img">
+                    <img src="images/course/indian-navy.png" class="attachment-full size-full">
+                  </div>
+                  <div class="rtin-overlay">
+                    <div class="rtin-title">Navy </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="rtin-item">
+                  <div class="rtin-img">
+                    <img src="images/course/indian-air-force.png" class="attachment-full size-full">
+                  </div>
+                  <div class="rtin-overlay">
+                    <div class="rtin-title">Air Force </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="rtin-item">
+                  <div class="rtin-img">
+                    <img src="images/course/delhi-police.png" class="attachment-full size-full">
+                  </div>
+                  <div class="rtin-overlay">
+                    <div class="rtin-title">Delhi Police </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="rtin-item">
+                  <div class="rtin-img">
+                    <img src="images/course/railway.png" class="attachment-full size-full">
+                  </div>
+                  <div class="rtin-overlay">
+                    <div class="rtin-title">Railway </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="rtin-item">
+                  <div class="rtin-img">
+                    <img src="images/course/physical.png" class="attachment-full size-full">
+                  </div>
+                  <div class="rtin-overlay">
+                    <div class="rtin-title">Physical </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+
                <br>
                <p>Commando Defence Academy is a top-notch training institution located in Buhana, Jhunjhunu, known
                   for
@@ -105,104 +175,101 @@
                   ability
                   to provide comprehensive and rigorous training programs that equip students with the necessary
                   skills and knowledge to excel in their military careers.
-                  <br><br>
-                  Commando Defence Academy is a top-notch training institution located in Buhana, Jhunjhunu, known
-                  for
-                  its expertise in training young individuals for the Army. The academy prides itself on its
-                  ability
-                  to provide comprehensive and rigorous training programs that equip students with the necessary
-                  skills and knowledge to excel in their military careers.
+                  <br>
                </p>
-            </div>
-            <div class="aboutImage">
-               <img src="images/Group 4.png">
-            </div>
-         </div>
-         <div class="objective">
-            <h1 style="align-self: center;">We Train For</h1>
-            <div class="policeObjective">
-               <span>
-               <img src="images/indianarmy.png" alt="">
-               </span>
-               <span>
-               <img src="images/DP.png" alt="">
-               </span>    
-               <span>
-               <img src="images/RP.png" alt="">
-               </span>                            
-               <span>
-               <img src="images/airforce.png" alt="">
-               </span>    
-               <span>
-               <img src="images/navy.png" alt="">
-               </span>
-            </div>
-            <div class="grid-wrapper">
-               <div class="big">
-                  <img src="images/group/training-4.jpeg" alt="" />
-               </div>
-               <div>
-                  <img src="images/group/full-team-picture-2.jpeg" alt="" />
-               </div>
-               <div class="tall">
-                  <img src="images/group/full-team-picture-3.jpeg" alt="">
-               </div>
-               <div class="wide">
-                  <img src="images/group/full-team-picture-4.jpeg" alt="" />
-               </div>
-               <div>
-                  <img src="images/group/full-team-picture-5.jpeg" alt="" />
-               </div>
-               <div class="tall">
-                  <img src="images/group/full-team-picture-6.jpeg" alt="" />
-               </div>
-               <div class="big">
-                  <img src="images/group/indian-forces-collage.jpeg" alt="" />
-               </div>
-               <div>
-                  <img src="images/group/medal.jpeg" alt="" />
-               </div>
-               <div class="wide">
-                  <img src="images/group/medal-distribution.jpeg" alt="" />
-               </div>
-               <div class="big">
-                  <img src="images/group/medal-distribution-2.jpeg" alt="" />
-               </div>
-               <div class="tall">
-                  <img src="images/group/medal-distribution-3.jpeg" alt="" />
-               </div>
-               <div>
-                  <img src="images/group/medal-distribution-4.jpeg" alt="" />
-               </div>
-               <div>
-                  <img src="images/group/race.jpeg" alt="" />
-               </div>
-               <div>
-                  <img src="images/group/slogan.jpeg" alt="" />
-               </div>
-               <div>
-                  <img src="images/group/sports.jpeg" alt="" />
-               </div>
-               <div class="wide">
-                  <img src="images/group/student-review.jpeg" alt="" />
-               </div>
-               <div>
-                  <img src="images/group/students-learning.jpeg" alt="" />
-               </div>
-               <div>
-                  <img src="images/group/students-practice-2.jpeg" alt="" />
-               </div>
-               <div class="wide">
-                  <img src="images/group/training.jpeg" alt="" />
-               </div>
-               <div>
-                  <img src="images/group/training-2.jpeg" alt="" />
-               </div>
-               <div class="wide">
-                  <img src="images/group/training-3.jpeg" alt="" />
-               </div>
-            </div>
-         </div>
-      </main>
-   </body>
+               <br>
+               <h3> -- Deepak Singh Rathore, Trainer</h3>
+
+        </div>
+        <div class="aboutImage">
+          <img src="images/Group 4.png">
+        </div>
+      </div>
+      <div class="objective">
+        <h1 style="align-self: center;">We Train For</h1>
+        <div class="policeObjective">
+          <span>
+            <img src="images/indianarmy.png" alt="">
+          </span>
+          <span>
+            <img src="images/DP.png" alt="">
+          </span>
+          <span>
+            <img src="images/RP.png" alt="">
+          </span>
+          <span>
+            <img src="images/airforce.png" alt="">
+          </span>
+          <span>
+            <img src="images/navy.png" alt="">
+          </span>
+        </div>
+        <div class="grid-wrapper">
+          <div class="big">
+            <img src="images/group/training-4.jpeg" alt="" />
+          </div>
+          <div>
+            <img src="images/group/full-team-picture-2.jpeg" alt="" />
+          </div>
+          <div class="tall">
+            <img src="images/group/full-team-picture-3.jpeg" alt="">
+          </div>
+          <div class="wide">
+            <img src="images/group/full-team-picture-4.jpeg" alt="" />
+          </div>
+          <div>
+            <img src="images/group/full-team-picture-5.jpeg" alt="" />
+          </div>
+          <div class="tall">
+            <img src="images/group/full-team-picture-6.jpeg" alt="" />
+          </div>
+          <div class="big">
+            <img src="images/group/indian-forces-collage.jpeg" alt="" />
+          </div>
+          <div>
+            <img src="images/group/medal.jpeg" alt="" />
+          </div>
+          <div class="wide">
+            <img src="images/group/medal-distribution.jpeg" alt="" />
+          </div>
+          <div class="big">
+            <img src="images/group/medal-distribution-2.jpeg" alt="" />
+          </div>
+          <div class="tall">
+            <img src="images/group/medal-distribution-3.jpeg" alt="" />
+          </div>
+          <div>
+            <img src="images/group/medal-distribution-4.jpeg" alt="" />
+          </div>
+          <div>
+            <img src="images/group/race.jpeg" alt="" />
+          </div>
+          <div>
+            <img src="images/group/slogan.jpeg" alt="" />
+          </div>
+          <div>
+            <img src="images/group/sports.jpeg" alt="" />
+          </div>
+          <div class="wide">
+            <img src="images/group/student-review.jpeg" alt="" />
+          </div>
+          <div>
+            <img src="images/group/students-learning.jpeg" alt="" />
+          </div>
+          <div>
+            <img src="images/group/students-practice-2.jpeg" alt="" />
+          </div>
+          <div class="wide">
+            <img src="images/group/training.jpeg" alt="" />
+          </div>
+          <div>
+            <img src="images/group/training-2.jpeg" alt="" />
+          </div>
+          <div class="wide">
+            <img src="images/group/training-3.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

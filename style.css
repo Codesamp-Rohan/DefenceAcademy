@@ -22,7 +22,9 @@ body {
 header{
     position: sticky;
     top: 0;
+    z-index: 6;
 }
+
 
 
 .topNavbar {
@@ -87,6 +89,9 @@ a {
 .bannerArea {
     background-color: #fff;
     object-fit: cover;
+    z-index: 99;
+    position: relative;
+
 }
 
 .bannerArea img {
@@ -105,6 +110,7 @@ a {
     margin-top: 40px;
     gap:50px;
     place-content:center;
+    position: relative;
 }
 
 .aboutContent {
@@ -372,4 +378,75 @@ grid-wrapper>img {
 .imageText > h1{
     font-size: 50px;
     color: #f9be4d;
+}
+
+/** Building the courses list **/
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course-list li {
+    width: 30%;
+    margin-right: 3%;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.2);
+}
+
+.course-list li a {
+    color: rgba(54, 57, 48,1);
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.rtin-item {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.rtin-item .rtin-img {
+    min-width: 300px;
+    height: 120px;
+}
+
+.rtin-item .rtin-overlay {
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    /* -webkit-transform: translateY(-50%); */
+    /* transform: translateY(-50%); */
+    width: 100%;
+    z-index: 5;
+    height: 100%;
+    background: rgb(0 0 0 / 61%);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.rtin-title {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    margin-top: 47px;
+}
+
+.rtin-item .rtin-overlay:hover{
+    background: inherit;
+}
+
+.carousel-cell.is-selected {
+    background-color: #f9be4d;
 }
