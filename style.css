@@ -116,6 +116,7 @@ a {
 .aboutContent {
     width: 44vw;
     padding-left: 20px;
+    place-self: end;
 }
 
 .aboutContent h1 {
@@ -174,7 +175,6 @@ a {
     overflow: hidden;
     gap: 10px;
     align-self: center;
-    border-radius: 60px;
 }
 
 .policeObjective>span{
