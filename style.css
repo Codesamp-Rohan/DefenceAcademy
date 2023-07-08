@@ -172,7 +172,7 @@ a {
     display: flex;
     scroll-snap-type: x mandatory;
     flex-direction: row;
-    overflow: hidden;
+    overflow: scroll;
     gap: 10px;
     align-self: center;
 }
@@ -194,7 +194,7 @@ a {
 }
 
 .policeObjective img {
-    width: 20vw;
+    width: 40vw;
     /* filter: brightness(0.8); */
 }
 
