@@ -340,6 +340,9 @@ a {
   .sidenav a:hover {
     transform: scale(1.4);
   }
+  .cursor2 {
+    display: none;
+  }
 }
 
 grid-wrapper > img {
