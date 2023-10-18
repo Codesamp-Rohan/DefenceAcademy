@@ -4,6 +4,8 @@
   box-sizing: border-box;
   font-family: inter, Helvetica, sans-serif;
 }
+
+
 .content {
   top: 50%;
   left: 50%;
@@ -46,7 +48,7 @@ img {
   -ms-user-select: none;
 }
 body {
-  background-color: #f0f0f0;
+  background-color: #f5ecda;
   overflow-x: hidden;
 }
 
@@ -160,15 +162,18 @@ a {
 
 .objective {
   display: flex;
-  flex-direction: column;
-  padding: 20px;
+  /* flex-direction: column; */
+  padding: 20px ;
+  margin:20px 0 20px 0;
+  overflow: hidden;
+  place-content:space-evenly;
 }
 
 .objective h1 {
   font-family: "Bevan", cursive;
   font-size: 40px;
-  margin-top: 100px;
-  margin-bottom: 30px;
+  text-align: center;
+  align-self: center;
 }
 
 .armyObjective {
@@ -225,7 +230,7 @@ a {
 
 @media screen and (max-width: 1000px) {
   .aboutAcademy {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
@@ -264,7 +269,10 @@ a {
 
   .policeObjective {
     margin: 10px;
+    display: initial !important;
+    text-align: center !important;
   }
+
   .sidenav {
     width: 100%;
   }
@@ -431,6 +439,15 @@ grid-wrapper > img {
 
 /** Building the courses list **/
 
+.courses{
+  font-size: 24px;
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  font-weight:500;
+}
+
+
 .course-list {
   display: flex;
   flex-wrap: wrap;
@@ -498,4 +515,280 @@ grid-wrapper > img {
 
 .carousel-cell.is-selected {
   background-color: #f9be4d;
+}
+
+/* styling the testimonials section */
+.testimonial-wrapper{
+}
+
+
+.testimonial-wrapper>h2{
+  text-align:center;
+  margin-bottom:20px;
+  font-size:40px;
+
+}
+
+
+.carousel-thumb>img{
+  height:150px;
+  width:150px;
+  border: 1px solid #000;
+  padding:3px;
+  border-radius:50%;
+}
+
+.carousel-cell.white{
+  background-color:inherit;
+  text-align: center;
+}
+
+/* displays a red arrow before the class element*/ 
+.arrow:before{
+  content: "⇛";
+  color:red;
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 24px;  
+}
+
+/* why us section */
+.whyUs{
+    justify-content: center;
+    display: flex;
+    column-gap: 62px;
+    margin: 100px auto 100px auto;
+    padding: 64px;
+    background-color: #f9be4d;
+/*    place-content: space-evenly;*/
+}
+
+.column-2 > img{
+  width: 100%;
+  max-width: 600px;
+  border: 1px;
+  border-radius: 30px;
+  border-style: solid;
+}
+
+.column-1{
+  max-width: 40vw;
+  text-align: center;
+  padding: 30px;
+}
+
+.column-1 > h2{
+  font-size: 42px;
+}
+
+.column-1 > p{
+  font-size: 22px;
+  text-align: justify;
+}
+
+.whyUsBtn{
+  margin: 10px 0px 10px 0px;
+  font-size: large;
+  background-color: #325633;
+  width: 163px;
+  border-style: solid;
+  height: 50px;
+  border-radius: 40px;
+  color: white;
+}
+
+.whyUsBtn > a > img{
+  filter: invert(1);
+  height: 20px;
+  margin-right: 8px;
+}
+
+.column-2{
+  align-self: center;
+}
+
+
+/*make it responsive */
+@media screen and (max-width: 1100px) {
+
+  .whyUs{
+    display: inline-block;
+  }
+
+  .column-1{
+    max-width: initial;
+  }
+
+  .column-1 > h2{
+    font-size: clamp(24px, 24px, 42px);
+  }
+
+  .column-2{
+    text-align: center;
+  }
+
+}
+
+
+@media screen and (max-width: 468px) {
+  .whyUs{
+    padding: 12px;
+  }
+
+  .column-1 > p{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 510px) {
+
+.objective > h1{
+  display: none;
+}
+
+.courses{
+  font-size: initial;
+}
+
+.whyUs{
+  margin-bottom: inherit;
+}
+
+}  
+
+
+/* CONTACT US SECTION */
+
+/* google maps*/
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 400px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  max-width: 600px;
+  height: 400px;
+}
+.gmap_iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.contactUs{
+  display: flex;
+  place-content: space-evenly;
+  background-color: #333;
+  padding: 20px;
+}
+
+.locationMap{
+  padding: 1.5rem;
+}
+
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #325633;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #679b69;
+}
+
+
+.contactMessage{
+  flex-direction: column !important;
+  justify-content: space-between;
+  display: flex;
+}
+
+.contactForm{
+  place-self: center;
+}
+
+/* build the yt part */
+.yt-padding{
+  padding: 0 20px 0 20px;
+}
+
+.yt-padding.is-selected{
+  background-color: initial;
+}
+  
+.carousel-cell> iframe{
+  border-radius: 40px !important;
+}
+
+.youtube{
+  padding-bottom: 68px;
+}
+
+/*footer*/
+.infoFooter{
+  text-align: center;
+  background-color: black;
+  color: white;
+  max-height: 68px;
+  width: 100vw;
+}
+
+.infoPara{
+  position: relative;
+}
+
+
+/* call us now*/
+
+.call-us{
+ 
+  font-size: -webkit-xxx-large;
+  margin: 20px 8% 20px 8%;
+  font-family: inherit;
+  color: white;
+}
+
+.spanCall{
+  color: #b0d236;
+  font-weight: bolder;
+}
+
+.divCallUs{
+  max-width: 620px;
+  margin-top: 20px;
+}
+
+@media(max-width:786px){
+  .contactForm{
+    display: none;
+  }
+}
+
+@media(max-width:468px){
+  .contactUs{
+    display: block;
+  }
 }
